@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>jqScribble example</title>
+		
+		<meta charset="utf-8"/>
+			
+		<script src="http://code.jquery.com/jquery-1.5.2.min.js" type="text/javascript" ></script>
+		<script src="namegen.js" type="text/javascript" ></script>
+		<script type="text/javascript">
+			var gen = new NameGen(roguelikeNames);
+			$(function()
+			{
+				$('a').live('click', function()
+				{
+					var name = gen.getName('male');
+					$('#names').prepend("<p>"+name+"</p>");
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<a href='#'>Click For Name</a>
+		<div id="names">
+			
+		</div>
+	</body>
+</html>
