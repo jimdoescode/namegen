@@ -1,3 +1,7 @@
+/*
+	These are based off of the naming file 'jice_fantasy.cfg' 
+	from the libtcod library. 
+*/
 //Name object syntax:
 //Declare the object itself.
 fantasyNames = {

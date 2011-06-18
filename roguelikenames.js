@@ -1,3 +1,7 @@
+/*
+	These are based off of the naming file 'mingos_standard.cfg' 
+	from the libtcod library. 
+*/
 roguelikeNames = {
 	male: {
 		vowel: 	['a','e','i','o','u','y'],
