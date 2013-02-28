@@ -3,7 +3,7 @@ This is an advanced string concatenator. It is geared towards creating random na
 To setup a name generator you need to create a javascript object which you then pass into the name generator upon execution.
 
 The object should look as follows:
-
+```js
 var nameObj = {
 	//Declare some casts
 	male: {
@@ -28,13 +28,13 @@ var nameObj = {
 		rule: '$10$title$_$start$50$middle$end'
 	}
 }
-
+```
 Now when you create the name generator you would pass in the name object like this:
-
+```js
 var gen = new NameGen(nameObj);
-
+```
 Then to get a name you would specify a cast that is in the nameObj like this:
-
+```js
 var name = gen.getName('female');
-
+```
 That will return a random combination of the string segments you created in the name object.
